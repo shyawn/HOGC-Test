@@ -16,7 +16,7 @@ body {
 
 h1 {
   font-style: normal;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 32px;
   line-height: 32px;
   text-align: center;
@@ -39,7 +39,7 @@ a {
 /* Header */
 .header {
   margin-top: 40px;
-  animation: slideInFromTop 1s ease-in;
+  animation: slideInFromTop 1s ease forwards;
 }
 
 .title::after {
@@ -49,8 +49,7 @@ a {
   height: 20px;
   border-radius: 5px;
   position: absolute;
-  transform: translate(0%, -115%);
-  left: 36%;
+  transform: translate(85%, -115%);
 }
 
 /* Showcase */
@@ -121,32 +120,16 @@ a {
   }
 }
 
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
 @keyframes slideInFromTop {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(-400px);
+  }
+
+  75% {
+    transform: translateY(30px);
   }
 
   100% {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes slideInFromBottom {
-  0% {
-    transform: translateY(100%);
-  }
-
-  100% {
-    transform: translateX(0);
+    transform: translateY(20px);
   }
 }
