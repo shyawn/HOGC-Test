@@ -21,6 +21,11 @@
   height: 300px;
 }
 
+.card:hover {
+  transform: scale(0.98);
+  transition: transform 0.2s ease-in;
+}
+
 .btn {
   display: inline block;
   padding: 10px 30px;
@@ -63,7 +68,7 @@
 
 .row-3 {
   display: grid;
-  grid-template-rows: 55% 25% 20%;
+  grid-template-rows: 60% 20% 20%;
   align-items: center;
   overflow: auto;
 }

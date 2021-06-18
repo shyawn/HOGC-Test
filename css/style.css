@@ -38,8 +38,19 @@ a {
 
 /* Header */
 .header {
-  margin-top: 20px;
+  margin-top: 40px;
   animation: slideInFromTop 1s ease-in;
+}
+
+.title::after {
+  content: "";
+  background: rgba(255, 0, 0, 0.1);
+  width: 350px;
+  height: 20px;
+  border-radius: 5px;
+  position: absolute;
+  transform: translate(0%, -115%);
+  left: 36%;
 }
 
 /* Showcase */
@@ -53,21 +64,24 @@ a {
 
 .text {
   height: 100%;
+  margin-top: 15px;
 }
 
 .text p {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 20px;
   margin: 15px 10px;
 }
 
-.instagram {
+.instagram.grid {
   justify-content: center;
+  grid-template-columns: 20% 80%;
+  gap: 0;
 }
 
 .instagram i {
-  margin-left: 40px;
-  margin-right: 5px;
+  margin-left: 27px;
+  margin-right: 30px;
 }
 
 .instagram a {
@@ -123,7 +137,7 @@ a {
   }
 
   100% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
 }
 
