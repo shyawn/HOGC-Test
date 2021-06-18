@@ -54,7 +54,7 @@ a {
 
 /* Showcase */
 .showcase {
-  animation: slideInFromLeft 1s ease-in;
+  animation: slideInFromLeft 0.9s ease-in;
 }
 
 .small-container p {
